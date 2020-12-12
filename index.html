@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS</title>
+</head>
+
+<body>
+
+    <script>
+        function menor(nom1, nom2, nom3, a, b, c) {
+            if (a < b && a < c)
+                return nom1
+            if (b < a && b < c)
+                return nom2
+            if (c < a && c < b)
+                return nom3
+        }
+
+        function main() {
+            let personas = [
+                {
+                    nombre: prompt('Ingrese nombre 1'),
+                    edad: prompt('Ingrese edad 1')
+                },
+                {
+                    nombre: prompt('Ingrese nombre 2'),
+                    edad: prompt('Ingrese edad 2')
+                },
+                {
+                    nombre: prompt('Ingrese nombre 3'),
+                    edad: prompt('Ingrese edad 3')
+                }
+            ]
+
+            console.log(menor(personas[0].nombre, personas[1].nombre, personas[2].nombre, personas[0].edad, personas[1].edad, personas[2].edad))
+        }
+
+        main();
+    </script>
+
+
+
+</body>
+
+</html>
